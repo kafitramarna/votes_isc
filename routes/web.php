@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\CandidateController;
+use App\Http\Controllers\VoteController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -15,3 +16,5 @@ Route::get('/candidate/create', [CandidateController::class, 'create'])->name('c
 Route::post('/candidate/store', [CandidateController::class, 'store'])->name('candidate.store');
 Route::get('/candidate/{id}/edit', [CandidateController::class, 'edit'])->name('candidate.edit');
 Route::put('/candidate/{id}/update', [CandidateController::class, 'update'])->name('candidate.update');
+Route::get('/vote/create', [VoteController::class, 'create'])->name('vote.create');
+Route::post('/vote/store', [VoteController::class, 'store'])->name('vote.store');
