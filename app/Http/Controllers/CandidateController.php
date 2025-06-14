@@ -1,5 +1,6 @@
 <?php
 
+//atta hitam legam
 namespace App\Http\Controllers;
 
 use App\Models\Candidate;
